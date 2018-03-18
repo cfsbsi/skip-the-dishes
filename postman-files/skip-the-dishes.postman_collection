@@ -1,0 +1,131 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Skip the Dishes",
+		"_postman_id": "36161d81-afb5-4810-23dc-abb5d956a378",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/order-microservice/api/v1/order",
+			"request": {
+				"url": "http://localhost:8080/order-microservice/api/v1/order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"date\": \"2018-03-18T14:47:27.536Z\",\n  \"customerId\": 0,\n  \"deliveryAddress\": \"string\",\n  \"contact\": \"string\",\n  \"storeId\": 0,\n  \"orderItems\": [\n    {\n      \"productId\": 1,\n      \"product\": {\n        \"storeId\": 1,\n        \"name\": \"string\",\n        \"description\": \"string\",\n        \"price\": 0\n      },\n      \"price\": 0,\n      \"quantity\": 0,\n      \"total\": 0\n    }\n  ],\n  \"total\": 0,\n  \"status\": \"string\",\n  \"lastUpdate\": \"2018-03-18T14:47:27.537Z\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/login",
+			"request": {
+				"url": "http://localhost:8080/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "christian",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer-microservice/api/v1/order",
+			"request": {
+				"url": "http://localhost:8080/order-microservice/api/v1/order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"date\": \"2018-03-18T14:47:27.536Z\",\n  \"customerId\": 0,\n  \"deliveryAddress\": \"string\",\n  \"contact\": \"string\",\n  \"storeId\": 0,\n  \"orderItems\": [\n    {\n      \"productId\": 1,\n      \"product\": {\n        \"storeId\": 1,\n        \"name\": \"string\",\n        \"description\": \"string\",\n        \"price\": 0\n      },\n      \"price\": 0,\n      \"quantity\": 0,\n      \"total\": 0\n    }\n  ],\n  \"total\": 0,\n  \"status\": \"string\",\n  \"lastUpdate\": \"2018-03-18T14:47:27.537Z\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer-microservice/api/v1/order/1",
+			"request": {
+				"url": "http://localhost:8080/order-microservice/api/v1/order/3",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"date\": \"2018-03-18T14:47:27.536Z\",\n  \"customerId\": 0,\n  \"deliveryAddress\": \"string\",\n  \"contact\": \"string\",\n  \"storeId\": 0,\n  \"orderItems\": [\n    {\n      \"productId\": 1,\n      \"product\": {\n        \"storeId\": 1,\n        \"name\": \"string\",\n        \"description\": \"string\",\n        \"price\": 0\n      },\n      \"price\": 0,\n      \"quantity\": 0,\n      \"total\": 0\n    }\n  ],\n  \"total\": 0,\n  \"status\": \"string\",\n  \"lastUpdate\": \"2018-03-18T14:47:27.537Z\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product-microservice/api/v1/product",
+			"request": {
+				"url": "http://localhost:8080/product-microservice/api/v1/product",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer-microservice/api/",
+			"request": {
+				"url": "http://localhost:8080/customer-microservice/api/v1/customer/christian",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
